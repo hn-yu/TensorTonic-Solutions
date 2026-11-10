@@ -22,6 +22,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Problem | Description | Link |
 |---|---|---|
 | Functional Array Update | Build a weighted histogram in JAX with indexed updates that return new arrays, so repeated bins accumulate and out-of-range indices are ignored under jit. | https://www.tensortonic.com/problems/jax-l01-functional-array-update |
+| Masked Mean Without Boolean Indexing | Compute a masked mean in JAX with jnp.where so every shape stays static under jit, returning 0 for slices with no valid entries. | https://www.tensortonic.com/problems/jax-l01-masked-mean |
 | PRNG Key Splitting | Generate reproducible per-layer dropout masks in JAX from one seed by splitting PRNG keys explicitly and never reusing a key. | https://www.tensortonic.com/problems/jax-l01-prng-key-splitting |
 | Implement Sigmoid in NumPy | Implement a vectorized sigmoid activation in NumPy for scalars, lists, vectors, and matrices, including large positive and negative inputs. | https://www.tensortonic.com/problems/sigmoid-numpy |
 
