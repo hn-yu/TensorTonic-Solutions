@@ -13,7 +13,6 @@ def logistic_value_and_grad(params: dict, x: jax.Array, y: jax.Array, l2: float)
         loss = loss1 + loss2
         return loss
     loss, grads = jax.value_and_grad(loss_fn)(params, x, y, l2)
-    output =  {"loss":loss, "grads":grads}
-    return output
+    return {"loss":loss, "grads":grads}
     
     
