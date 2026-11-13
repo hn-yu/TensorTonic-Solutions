@@ -12,8 +12,8 @@ def ste_fake_quantize(x: jax.Array, scale: float, qmin: int, qmax: int, cotangen
     def f_fwd(x):
         return f(x), jnp.where((qmin<= x/scale) & (x/scale<= qmax), 1, 0)
 
-    def f_bwd(m,c):
-        return (m*c,)
+    def f_bwd(residuals,c):
+        return (residuals*c,)
 
     f.defvjp(f_fwd, f_bwd)
     values, grad_fn = jax.vjp(f,x)
