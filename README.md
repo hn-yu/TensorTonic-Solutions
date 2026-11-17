@@ -28,6 +28,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Per-Example Gradient Clipping | Get per-example gradients with jax.vmap over jax.grad, clip each to a maximum norm and average them, the core of a DP-SGD step. | https://www.tensortonic.com/problems/jax-l02-per-example-gradient-clipping |
 | Straight-Through Estimator with Custom VJP | Write a rounding quantizer with jax.custom_vjp whose backward pass is a clipped straight-through estimator, as used in quantization-aware training. | https://www.tensortonic.com/problems/jax-l02-straight-through-estimator |
 | Value and Grad of a Loss | Use jax.value_and_grad to get a logistic regression loss and the gradients of a parameter dict in one forward and backward pass. | https://www.tensortonic.com/problems/jax-l02-value-and-grad-loss |
+| Static Arguments in jit | Split token vectors into attention heads, RMS-normalize each head and merge them back under jax.jit with a static head count. | https://www.tensortonic.com/problems/jax-l03-static-arguments-jit |
 | Implement Sigmoid in NumPy | Implement a vectorized sigmoid activation in NumPy for scalars, lists, vectors, and matrices, including large positive and negative inputs. | https://www.tensortonic.com/problems/sigmoid-numpy |
 
 View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/yhn90116)
