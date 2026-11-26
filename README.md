@@ -32,6 +32,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Spectral Norm by Power Iteration | Estimate the largest singular value of a matrix with power iteration inside jax.lax.fori_loop, using a traced iteration count. | https://www.tensortonic.com/problems/jax-l03-power-iteration-spectral-norm |
 | Static Arguments in jit | Split token vectors into attention heads, RMS-normalize each head and merge them back under jax.jit with a static head count. | https://www.tensortonic.com/problems/jax-l03-static-arguments-jit |
 | Traced Learning Rate Schedule | Compute linear warmup followed by cosine decay for a traced JAX step with jnp.where, for one step or a whole vector of steps. | https://www.tensortonic.com/problems/jax-l03-traced-lr-schedule |
+| Batched Attention with vmap | Write scaled dot-product attention for one head in JAX and batch it over the batch and head axes with nested jax.vmap. | https://www.tensortonic.com/problems/jax-l04-batched-attention-vmap |
 | Implement Sigmoid in NumPy | Implement a vectorized sigmoid activation in NumPy for scalars, lists, vectors, and matrices, including large positive and negative inputs. | https://www.tensortonic.com/problems/sigmoid-numpy |
 
 View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/yhn90116)
