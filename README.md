@@ -34,6 +34,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Traced Learning Rate Schedule | Compute linear warmup followed by cosine decay for a traced JAX step with jnp.where, for one step or a whole vector of steps. | https://www.tensortonic.com/problems/jax-l03-traced-lr-schedule |
 | Batched Attention with vmap | Write scaled dot-product attention for one head in JAX and batch it over the batch and head axes with nested jax.vmap. | https://www.tensortonic.com/problems/jax-l04-batched-attention-vmap |
 | Model Ensemble with in_axes | Evaluate a stacked ensemble of small MLPs on shared inputs in JAX with jax.vmap and in_axes, returning each prediction and the mean. | https://www.tensortonic.com/problems/jax-l04-ensemble-in-axes |
+| Pairwise Distances with Nested vmap | Build pairwise squared distance and cosine similarity matrices in JAX by nesting jax.vmap over two point sets, with no loops. | https://www.tensortonic.com/problems/jax-l04-pairwise-distances-nested-vmap |
 | Implement Sigmoid in NumPy | Implement a vectorized sigmoid activation in NumPy for scalars, lists, vectors, and matrices, including large positive and negative inputs. | https://www.tensortonic.com/problems/sigmoid-numpy |
 
 View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/yhn90116)
